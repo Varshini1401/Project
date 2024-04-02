@@ -81,8 +81,7 @@ st.write(prediction_proba)
 
 
 get_ipython().system('pip install streamlit')
-
-
+get_ipython().system('pip install sklearn')
 # In[ ]:
 
 
