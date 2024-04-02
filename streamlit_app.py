@@ -46,13 +46,13 @@ age = st.sidebar.slider('Age', 0, 100, 25)
 gender = st.sidebar.selectbox('Gender', ['Male', 'Female'])
 blood_pressure = st.sidebar.selectbox('Blood Pressure', ['Low', 'Normal', 'High'])
 cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['Low', 'Normal', 'High'])
-Disease = st.sidebar.selectbox('Select Disease', data['Disease'].unique())
+selected_disease = st.sidebar.selectbox('Select Disease', data['Disease'].unique())
 
 # Filter dataset based on selected disease
 filtered_data = data[data['Disease'] == selected_disease]
 
 # Create a dataframe with the user input
-input_data = pd.DataFrame({'Disease':[Disease],
+input_data = pd.DataFrame({'Disease':[filtered_data],
     'Fever': [fever],
                            'Cough': [cough],
                            'Fatigue': [fatigue],
