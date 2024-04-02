@@ -52,7 +52,7 @@ selected_disease = st.sidebar.selectbox('Select Disease', data['Disease'].unique
 filtered_data = data[data['Disease'] == selected_disease]
 
 # Create a dataframe with the user input
-input_data = pd.DataFrame({'Disease':[filtered_data],
+input_data = pd.DataFrame({'Disease':[selected_disease],
     'Fever': [fever],
                            'Cough': [cough],
                            'Fatigue': [fatigue],
