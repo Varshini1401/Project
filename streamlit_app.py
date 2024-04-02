@@ -12,7 +12,7 @@ from sklearn.preprocessing import LabelEncoder
 import pickle
 
 # Load the trained machine learning model
-with open('base1.pkl', 'rb') as f:  # Replace 'your_model_file.pkl' with the path to your trained model file
+with open('base.pkl', 'rb') as f:  # Replace 'your_model_file.pkl' with the path to your trained model file
     model = pickle.load(f)
 data=pd.read_csv(r"Disease_symptom_and_patient_profile_dataset (1).csv")
 # Define the function to preprocess input data
