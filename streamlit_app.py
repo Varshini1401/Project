@@ -33,19 +33,7 @@ def preprocess_input(df):
 
 # Define the title of the web app
 st.title('Disease Prediction App')
-st.markdown(
-    """
-    <style>
-    .title {
-        text-align: center;
-        color: #2f54eb;
-        font-size: 36px;
-        margin-bottom: 30px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown('<link rel="stylesheet" type="text/css" href="./styles.css">', unsafe_allow_html=True)
 
 # Create a sidebar for user input
 st.sidebar.header('User Input')
@@ -89,30 +77,6 @@ st.write(prediction[0])
 # Display prediction probability
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
-st.markdown(
-    """
-    <style>
-    .sidebar .sidebar-content {
-        background-color: #f0f2f6;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .sidebar .sidebar-content .sidebar-section {
-        margin-bottom: 20px;
-    }
-    .main {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    }
-    .stSlider {
-        width: 90%;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # In[2]:
 
