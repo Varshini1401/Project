@@ -82,7 +82,6 @@ st.write(prediction_proba)
 
 
 
-get_ipython().system('pip install scikit-learn')
 # In[ ]:
 
 
