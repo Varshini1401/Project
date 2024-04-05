@@ -47,7 +47,7 @@ age = st.sidebar.slider('Age', 0, 100, 25)
 gender = st.sidebar.selectbox('Gender', ['select','Male', 'Female'])
 blood_pressure = st.sidebar.selectbox('Blood Pressure', ['select','Low', 'Normal', 'High'])
 cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['select','Low', 'Normal', 'High'])
-selected_disease = st.sidebar.selectbox('Select Disease', data['Disease'].unique(),index=0)
+selected_disease = st.sidebar.selectbox('Select Disease',['Select'] + list(data['Disease'].unique()))
 
 # Filter dataset based on selected disease
 filtered_data = data[data['Disease'] == selected_disease]
