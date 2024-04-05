@@ -39,14 +39,14 @@ st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">', unsafe_
 st.sidebar.header('User Input')
 
 # Create input fields for each feature
-fever = st.sidebar.selectbox('Fever', ['select',Yes', 'No'])
-cough = st.sidebar.selectbox('Cough', ['select',Yes', 'No'])
-fatigue = st.sidebar.selectbox('Fatigue', ['select',Yes', 'No'])
-difficulty_breathing = st.sidebar.selectbox('Difficulty Breathing', ['select',Yes', 'No'])
+fever = st.sidebar.selectbox('Fever', ['select','Yes', 'No'])
+cough = st.sidebar.selectbox('Cough', ['select','Yes', 'No'])
+fatigue = st.sidebar.selectbox('Fatigue', ['select','Yes', 'No'])
+difficulty_breathing = st.sidebar.selectbox('Difficulty Breathing', ['select','Yes', 'No'])
 age = st.sidebar.slider('Age', 0, 100, 25)
 gender = st.sidebar.selectbox('Gender', ['select','Male', 'Female'])
 blood_pressure = st.sidebar.selectbox('Blood Pressure', ['select','Low', 'Normal', 'High'])
-cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['select',Low', 'Normal', 'High'])
+cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['select','Low', 'Normal', 'High'])
 selected_disease = st.sidebar.selectbox('Select Disease', data['Disease'].unique(),index=0)
 
 # Filter dataset based on selected disease
