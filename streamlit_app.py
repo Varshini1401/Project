@@ -39,15 +39,15 @@ st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">', unsafe_
 st.sidebar.header('User Input')
 
 # Create input fields for each feature
-fever = st.sidebar.selectbox('Fever', ['select','Yes', 'No'])
-cough = st.sidebar.selectbox('Cough', ['select','Yes', 'No'])
-fatigue = st.sidebar.selectbox('Fatigue', ['select','Yes', 'No'])
-difficulty_breathing = st.sidebar.selectbox('Difficulty Breathing', ['select','Yes', 'No'])
+fever = st.sidebar.selectbox('Fever', ['Yes', 'No'])
+cough = st.sidebar.selectbox('Cough', ['Yes', 'No'])
+fatigue = st.sidebar.selectbox('Fatigue', ['Yes', 'No'])
+difficulty_breathing = st.sidebar.selectbox('Difficulty Breathing', ['Yes', 'No'])
 age = st.sidebar.slider('Age', 0, 100, 25)
-gender = st.sidebar.selectbox('Gender', ['select','Male', 'Female'])
-blood_pressure = st.sidebar.selectbox('Blood Pressure', ['select','Low', 'Normal', 'High'])
-cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['select','Low', 'Normal', 'High'])
-selected_disease = st.sidebar.selectbox('Select Disease',['Select'] + list(data['Disease'].unique()))
+gender = st.sidebar.selectbox('Gender', ['Male', 'Female'])
+blood_pressure = st.sidebar.selectbox('Blood Pressure', ['Low', 'Normal', 'High'])
+cholesterol_level = st.sidebar.selectbox('Cholesterol Level', ['Low', 'Normal', 'High'])
+selected_disease = st.sidebar.selectbox('Select Disease',data['Disease'].unique())
 
 # Filter dataset based on selected disease
 filtered_data = data[data['Disease'] == selected_disease]
