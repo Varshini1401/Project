@@ -33,7 +33,7 @@ def preprocess_input(df):
 
 # Define the title of the web app
 st.title('Disease Prediction App')
-st.markdown('<link rel="stylesheet" type="text/css" href="github.com/Varshini1401/Project/blob/main/styles.css">', unsafe_allow_html=True)
+st.markdown('<link rel="stylesheet" type="text/css" href="https://github.com/Varshini1401/Project/blob/main/styles.css">', unsafe_allow_html=True)
 
 # Create a sidebar for user input
 st.sidebar.header('User Input')
