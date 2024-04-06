@@ -1,5 +1,5 @@
-scikit-learn
 scikit-learn==1.1.1
+setuptools==60.9.3
 streamlit==1.32.2
 
 
